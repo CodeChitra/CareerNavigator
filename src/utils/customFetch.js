@@ -2,8 +2,10 @@ import axios from "axios";
 import { getUserFromLocalStorage } from "./localStorage";
 import { clearStore } from "../features/user/userSlice";
 // http://localhost:5000/api/v1
+// https://redux-toolkit-jobster-api-server.onrender.com
+// https://applitracker-api.onrender.com
 const customFetch = axios.create({
-  baseURL: "https://redux-toolkit-jobster-api-server.onrender.com/api/v1",
+  baseURL: "https://applitracker-api.onrender.com/api/v1",
 });
 
 customFetch.interceptors.request.use((config) => {
